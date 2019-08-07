@@ -1,9 +1,8 @@
-package za.ac.cput.payroll.Service.User.impl;
+package za.ac.cput.payroll.Service.User;
 
 import za.ac.cput.payroll.Domain.User.Employee;
 import za.ac.cput.payroll.Repository.User.EmployeeRepository;
 import za.ac.cput.payroll.Repository.User.impl.EmployeeRepositoryImpl;
-import za.ac.cput.payroll.Service.User.EmployeeService;
 
 import java.util.Set;
 

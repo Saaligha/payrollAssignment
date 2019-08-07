@@ -1,12 +1,10 @@
-package za.ac.cput.payroll.Service.impl;
+package za.ac.cput.payroll.Service.User;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.payroll.Domain.User.EmployeeGender;
 import za.ac.cput.payroll.Factory.User.EmployeeGenderFactory;
-import za.ac.cput.payroll.Service.User.EmployeeGenderService;
-import za.ac.cput.payroll.Service.User.impl.EmployeeGenderServiceImpl;
 
 import java.util.Set;
 

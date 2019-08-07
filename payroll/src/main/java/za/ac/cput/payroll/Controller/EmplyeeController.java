@@ -14,8 +14,8 @@ import za.ac.cput.payroll.Service.Demography.impl.GenderServiceImpl;
 import za.ac.cput.payroll.Service.Demography.impl.RaceServiceImpl;
 import za.ac.cput.payroll.Service.User.EmployeeGenderService;
 import za.ac.cput.payroll.Service.User.EmployeeService;
-import za.ac.cput.payroll.Service.User.impl.EmployeeGenderServiceImpl;
-import za.ac.cput.payroll.Service.User.impl.EmployeeServiceImpl;
+import za.ac.cput.payroll.Service.User.EmployeeGenderServiceImpl;
+import za.ac.cput.payroll.Service.User.EmployeeServiceImpl;
 
 public class EmplyeeController {
     private EmployeeService employeeService = EmployeeServiceImpl.getService();

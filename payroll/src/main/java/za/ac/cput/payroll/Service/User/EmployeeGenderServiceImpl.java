@@ -1,9 +1,8 @@
-package za.ac.cput.payroll.Service.User.impl;
+package za.ac.cput.payroll.Service.User;
 
 import za.ac.cput.payroll.Domain.User.EmployeeGender;
 import za.ac.cput.payroll.Repository.User.EmployeeGenderRepository;
 import za.ac.cput.payroll.Repository.User.impl.EmployeeGenderRepositoryImpl;
-import za.ac.cput.payroll.Service.User.EmployeeGenderService;
 
 import java.util.Set;
 

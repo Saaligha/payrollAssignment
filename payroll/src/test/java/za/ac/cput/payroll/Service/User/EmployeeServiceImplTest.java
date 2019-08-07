@@ -1,12 +1,10 @@
-package za.ac.cput.payroll.Service.impl;
+package za.ac.cput.payroll.Service.User;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import za.ac.cput.payroll.Domain.User.Employee;
 import za.ac.cput.payroll.Factory.User.EmployeeFactory;
-import za.ac.cput.payroll.Service.User.EmployeeService;
-import za.ac.cput.payroll.Service.User.impl.EmployeeServiceImpl;
 
 import java.util.Set;
 
