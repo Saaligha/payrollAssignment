@@ -1,6 +1,6 @@
-package za.ac.cput.payroll.Service;
+package za.ac.cput.payroll.Repository;
 
-public interface IService  <T, ID> {
+public interface Repository<T, ID> {
 
     T create(T t);
 
