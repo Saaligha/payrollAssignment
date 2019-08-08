@@ -31,10 +31,10 @@ public class EmplyeeController {
         EmployeeGender employeeGender = EmployeeGenderFactory.buildEmployeeGender(empId, genderId);
         employeeGenderService.create(employeeGender);
 
-        Race race = RaceFactory.buildRace(raceId, "Race");
+        Race race = RaceFactory.buildRace(raceId, "Person's race");
         raceService.create(race);
 
-        Gender gender = GenderFactory.buildGender(genderId, "None");
+        Gender gender = GenderFactory.buildGender(genderId, "Male or female");
         genderService.create(gender);
 
 

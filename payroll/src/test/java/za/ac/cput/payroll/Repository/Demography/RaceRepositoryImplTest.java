@@ -1,27 +1,32 @@
-package za.ac.cput.payroll.Service.Demography;
+package za.ac.cput.payroll.Repository.Demography;
+
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
 import za.ac.cput.payroll.Domain.Demography.Race;
 import za.ac.cput.payroll.Factory.Demography.RaceFactory;
-import za.ac.cput.payroll.Service.Demography.impl.RaceServiceImpl;
+import za.ac.cput.payroll.Repository.Demography.impl.RaceRepositoryImpl;
 
 import java.util.Set;
 
-public class RaceServiceImplTest {
+import static org.junit.Assert.*;
 
-    private RaceService service;
+public class RaceRepositoryImplTest {
+
+    private RaceRepository repository;
 
     @Before
     public void setUp() throws Exception {
-        this.service = RaceServiceImpl.getService();
+        this.repository = RaceRepositoryImpl.getRaceRepository();
     }
+
 
     @Test
     public void getAll() {
 
-        Set<Race> employeeSet = service.getAll();
+        Set<Race> employeeSet = repository.getAll();
         Assert.assertNotNull(employeeSet);
 
     }
@@ -31,9 +36,9 @@ public class RaceServiceImplTest {
 
         Race employee = RaceFactory.buildRace(1,"indian");
 
-        service.create(employee);
+        repository.create(employee);
 
-        Race inRepo = service.read(employee.getRaceID());
+        Race inRepo = repository.read(employee.getRaceID());
 
         Assert.assertNotNull(inRepo);
 
@@ -44,9 +49,9 @@ public class RaceServiceImplTest {
 
         Race employee = RaceFactory.buildRace(1,"indian");
 
-        service.create(employee);
+        repository.create(employee);
 
-        Race inRepo = service.read(employee.getRaceID());
+        Race inRepo = repository.read(employee.getRaceID());
 
         Assert.assertNotNull(inRepo);
     }
@@ -56,12 +61,12 @@ public class RaceServiceImplTest {
 
         Race employee = RaceFactory.buildRace(1,"indian");
 
-        service.create(employee);
-        Race inRepo = service.read(employee.getRaceID());
+        repository.create(employee);
+        Race inRepo = repository.read(employee.getRaceID());
 
-        employee.setDesc("This person is indian");
+        employee.setDesc("No description available");
 
-        service.update(employee);
+        repository.update(employee);
 
         Assert.assertEquals(employee.getRaceID(), inRepo.getRaceID());
 
@@ -72,15 +77,15 @@ public class RaceServiceImplTest {
 
         Race employee = RaceFactory.buildRace(1,"indian");
 
-        service.create(employee);
+        repository.create(employee);
 
-        Race inRepo = service.read(employee.getRaceID());
+        Race inRepo = repository.read(employee.getRaceID());
 
         Assert.assertNotNull(inRepo);
 
-        service.delete(employee.getRaceID());
+        repository.delete(employee.getRaceID());
 
-        Race deleted = service.read(employee.getRaceID());
+        Race deleted = repository.read(employee.getRaceID());
 
         Assert.assertNull(deleted);
 

@@ -9,7 +9,7 @@ public class RaceFactoryTest {
     @Test
     public void buildRace() {
 
-        Race race = RaceFactory.buildRace(1, "African");
+        Race race = RaceFactory.buildRace(1, "Indian");
         Assert.assertNotNull(race);
 
 
